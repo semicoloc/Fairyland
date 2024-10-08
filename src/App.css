@@ -3,3 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+#root {
+    background-image: url("../../public/back_img.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    overflow-y: auto;
+}
+
+/* header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding: 20px 0;
+}
+
+/* outlet */
+.main-content {
+    flex: 1;
+    padding-top: 80px;
+    overflow-y: auto;
+}
