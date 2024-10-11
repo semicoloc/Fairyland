@@ -47,7 +47,7 @@ export const NewStoryData = {
     book10: {
         contentId: 10,
         title: "흥부와 놀부",
-        imageUrl: "",
+        imageUrl: "/thumbnail/rich.png",
     },
     book11: {
         contentId: 11,
@@ -217,7 +217,7 @@ export const OriginStoryData = {
     book10: {
         contentId: 10,
         title: "흥부와 놀부",
-        imageUrl: "",
+        imageUrl: "/thumbnail/rich.png",
         story: {
             text01: "",
         },

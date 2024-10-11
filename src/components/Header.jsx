@@ -43,14 +43,14 @@ export function Header() {
                                 HOME
                             </Link>
                         </li>
-                        <li className={isActive("/new")}>
-                            <Link to="/new" onClick={closeMenu}>
-                                NEW STORY
-                            </Link>
-                        </li>
                         <li className={isActive("/origin")}>
                             <Link to="/origin" onClick={closeMenu}>
                                 ORIGIN STORY
+                            </Link>
+                        </li>
+                        <li className={isActive("/new")}>
+                            <Link to="/new" onClick={closeMenu}>
+                                NEW STORY
                             </Link>
                         </li>
                     </ul>
