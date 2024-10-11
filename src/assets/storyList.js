@@ -91,6 +91,16 @@ export const OriginStoryData = {
             text07: "첫째 돼지, 둘째 돼지는 셋째 돼지 집으로 도망갔어요. 곧 셋째 돼지 집에 배고픈 늑대가 다가와서 문을 똑똑 두드리며 말했어요. 작은 돼지야, 나 좀 들여보내 줘. 안 돼, 안 돼, 절대 들어올 수 없어. 늑대는 훅훅 불었지만, 벽돌집은 끄떡없었지요.",
             text08: "늑대는 화가 엄청 났어요. 늑대는 지붕 위로 올라가서 굴뚝 아래로 내려갔어요. 그러다가 그만 펄펄 끓는 냄비 속으로 풍덩 빠졌지요! 늑대는 깜짝 놀라 도망갔어요. 아기 돼지 삼형제는 모두 벽돌로 튼튼하게 집을 지었어요. 그리고 오래오래 살았답니다.",
         },
+        img: {
+            img01: "/thumbnail/pig.png",
+            img02: "/thumbnail/pig.png",
+            img03: "/thumbnail/pig.png",
+            img04: "/thumbnail/pig.png",
+            img05: "/thumbnail/pig.png",
+            img06: "/thumbnail/pig.png",
+            img07: "/thumbnail/pig.png",
+            img08: "/thumbnail/pig.png",
+        },
     },
     book2: {
         contentId: 2,
@@ -104,6 +114,16 @@ export const OriginStoryData = {
             text05: `거북이는 쿨쿨 잠이 든 토끼를 지나 마침내 산꼭대기에 도착했어요. "야호! 내가 토끼를 이겼다."`,
             text06: `"아, 아니. 뭐라고?" 뒤늦게 잠에서 깨어난 토끼는 그제야 허둥지둥 산으로 달려갔어요. 하지만 거북이는 이미 산꼭대기 나무 아래에서 쉬고있었답니다.`,
         },
+        img: {
+            img01: "/thumbnail/rabbit&tuttle.png",
+            img02: "/thumbnail/rabbit&tuttle.png",
+            img03: "/thumbnail/rabbit&tuttle.png",
+            img04: "/thumbnail/rabbit&tuttle.png",
+            img05: "/thumbnail/rabbit&tuttle.png",
+            img06: "/thumbnail/rabbit&tuttle.png",
+            img07: "/thumbnail/rabbit&tuttle.png",
+            img08: "/thumbnail/rabbit&tuttle.png",
+        },
     },
     book3: {
         contentId: 3,
@@ -111,6 +131,9 @@ export const OriginStoryData = {
         imageUrl: "/thumbnail/jack.webp",
         story: {
             text01: "",
+        },
+        img: {
+            img01: "",
         },
     },
     book4: {
@@ -120,6 +143,9 @@ export const OriginStoryData = {
         story: {
             text01: "",
         },
+        img: {
+            img01: "",
+        },
     },
     book5: {
         contentId: 5,
@@ -127,6 +153,9 @@ export const OriginStoryData = {
         imageUrl: "/thumbnail/cinde.webp",
         story: {
             text01: "",
+        },
+        img: {
+            img01: "",
         },
     },
     book6: {
@@ -136,6 +165,9 @@ export const OriginStoryData = {
         story: {
             text01: "",
         },
+        img: {
+            img01: "",
+        },
     },
     book7: {
         contentId: 7,
@@ -143,6 +175,9 @@ export const OriginStoryData = {
         imageUrl: "/thumbnail/cookie.webp",
         story: {
             text01: "",
+        },
+        img: {
+            img01: "",
         },
     },
     book8: {
@@ -157,6 +192,16 @@ export const OriginStoryData = {
             text05: `정직한 나무꾼은, "아닙니다. 제 도끼는 오래된 쇠도끼입니다."라고 대답했습니다. 이에 산신령은 나무꾼의 정직함을 칭찬하며 금도끼, 은도끼, 쇠도끼 모두를 주었어요`,
             text06: `한편, 이 이야기를 전해들은 이웃의 욕심장이 나무꾼이 정직한 나무꾼의 흉내를 내고자 했어요. 그러나 욕심장이 나무꾼은 금도끼, 은도끼 모두 제것이라고 거짓을 대답하여 산신령님의 노여움을 사 금도끼, 은도끼는 커녕 제 쇠도끼마저 잃고 말았어요.`,
         },
+        img: {
+            img01: "/thumbnail/gold&silver.png",
+            img02: "/thumbnail/gold&silver.png",
+            img03: "/thumbnail/gold&silver.png",
+            img04: "/thumbnail/gold&silver.png",
+            img05: "/thumbnail/gold&silver.png",
+            img06: "/thumbnail/gold&silver.png",
+            img07: "/thumbnail/gold&silver.png",
+            img08: "/thumbnail/gold&silver.png",
+        },
     },
     book9: {
         contentId: 9,
@@ -164,6 +209,9 @@ export const OriginStoryData = {
         imageUrl: "/thumbnail/ant.webp",
         story: {
             text01: "",
+        },
+        img: {
+            img01: "",
         },
     },
     book10: {
@@ -173,6 +221,9 @@ export const OriginStoryData = {
         story: {
             text01: "",
         },
+        img: {
+            img01: "",
+        },
     },
     book11: {
         contentId: 11,
@@ -180,6 +231,9 @@ export const OriginStoryData = {
         imageUrl: "/thumbnail/boy&girl.webp",
         story: {
             text01: "",
+        },
+        img: {
+            img01: "",
         },
     },
     book12: {
@@ -189,6 +243,9 @@ export const OriginStoryData = {
         story: {
             text01: "",
         },
+        img: {
+            img01: "",
+        },
     },
     book13: {
         contentId: 13,
@@ -196,6 +253,9 @@ export const OriginStoryData = {
         imageUrl: "/thumbnail/fox.webp",
         story: {
             text01: "",
+        },
+        img: {
+            img01: "",
         },
     },
     book14: {
@@ -205,6 +265,9 @@ export const OriginStoryData = {
         story: {
             text01: "",
         },
+        img: {
+            img01: "",
+        },
     },
     book15: {
         contentId: 15,
@@ -212,6 +275,9 @@ export const OriginStoryData = {
         imageUrl: "/thumbnail/longnose.webp",
         story: {
             text01: "",
+        },
+        img: {
+            img01: "",
         },
     },
 };
