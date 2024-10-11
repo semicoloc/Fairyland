@@ -18,6 +18,7 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
+    height: auto;
 }
 
 .gif::before {
@@ -492,6 +493,12 @@ h3 {
     .story-grid {
         grid-template-columns: repeat(2, 1fr); /* 한 줄에 3개의 카드 */
     }
+    .home01 {
+        background-color: transparent;
+    }
+    .home02 {
+        background-color: transparent;
+    }
 }
 
 @media (max-width: 650px) {
@@ -535,5 +542,11 @@ h3 {
     }
     .text-to-speech i {
         font-size: 28px;
+    }
+    .home01 {
+        background-color: transparent;
+    }
+    .home02 {
+        background-color: transparent;
     }
 }
