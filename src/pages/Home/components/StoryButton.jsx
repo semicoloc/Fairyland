@@ -7,11 +7,13 @@ export function StoryButton() {
                 img="/thumbnail/origin.webp"
                 title={"Origin Story"}
                 text={"READ ORIGIN"}
+                type={"origin"}
             />
             <StoryBtnCard
                 img="/thumbnail/new.webp"
                 title={"New Story"}
                 text={"READ NEW"}
+                type={"new"}
             />
         </div>
     );

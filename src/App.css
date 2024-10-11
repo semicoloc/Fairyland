@@ -184,11 +184,13 @@ nav a:hover {
 
 /* footer */
 .footer {
+    margin-top: 8rem;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
 }
 .footer-box {
     max-width: 1440px;
+    width: calc(100% - 4rem);
     margin: auto;
     padding: 2rem 0;
 }
@@ -320,6 +322,7 @@ h4 {
 .thumbnail {
     width: 100%;
     height: 66%;
+    border: 1px solid pink;
     overflow: hidden;
     transition: transform 0.3s ease; /* 부드러운 전환 효과 추가 */
 }
@@ -352,6 +355,9 @@ h3 {
     border-radius: 50px;
     background-color: white;
     box-shadow: 5px 5px 5px rgba(66, 66, 66, 0.5);
+}
+.swiper-btn:hover {
+    background-color: #9aa1b9;
 }
 
 /* -- story button -- */
@@ -413,9 +419,6 @@ h3 {
 }
 
 /* -- origin story page -- */
-.cardSwiper {
-    /* background-color: white; */
-}
 
 .cardSwiper .swiper-slide {
     height: 800px;
@@ -423,7 +426,7 @@ h3 {
 }
 
 .cardSwiper .swiper-slide-active {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 .cardSwiper .slide-box {
     margin: auto;
@@ -493,6 +496,18 @@ h3 {
     .story-grid {
         grid-template-columns: repeat(2, 1fr); /* 한 줄에 3개의 카드 */
     }
+    .cardSwiper .slide-box h5 {
+        font-size: 28px;
+    }
+    .cardSwiper .slide-box img {
+        height: 450px;
+    }
+    .cardSwiper .slide-box p {
+        font-size: 24px;
+    }
+    .text-to-speech i {
+        font-size: 24px;
+    }
     .home01 {
         background-color: transparent;
     }
@@ -534,19 +549,32 @@ h3 {
     nav ul li {
         margin: 10px 0;
     }
+    .cardSwiper .swiper-slide {
+        height: 600px;
+    }
     .cardSwiper .slide-box h5 {
         font-size: 20px;
+    }
+    .cardSwiper .slide-box .img-box {
+        width: calc(100% - 2rem);
+        margin: 1rem auto;
+    }
+    .cardSwiper .slide-box img {
+        height: 300px;
     }
     .cardSwiper .slide-box p {
         font-size: 16px;
     }
     .text-to-speech i {
-        font-size: 28px;
+        font-size: 16px;
     }
     .home01 {
         background-color: transparent;
     }
     .home02 {
         background-color: transparent;
+    }
+    .thumbnail img {
+        height: auto;
     }
 }

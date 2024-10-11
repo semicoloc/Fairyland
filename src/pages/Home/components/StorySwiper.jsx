@@ -4,8 +4,14 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper/modules";
+import { useNavigate } from "react-router-dom";
 
 export function StorySwiper() {
+    const navigate = useNavigate();
+    const handleClick = (id) => {
+        navigate(`/origin-story/${id}`);
+    };
+
     return (
         <div className="swiper">
             <Swiper
@@ -47,7 +53,12 @@ export function StorySwiper() {
                         <h3 className="ibm-plex-sans-kr-medium">
                             아기돼지 삼형제
                         </h3>
-                        <button className="swiper-btn">READ STORY</button>
+                        <button
+                            className="swiper-btn"
+                            onClick={() => handleClick(1)}
+                        >
+                            READ STORY
+                        </button>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -58,7 +69,12 @@ export function StorySwiper() {
                         <h3 className="ibm-plex-sans-kr-medium">
                             토끼와 거북이
                         </h3>
-                        <button className="swiper-btn">READ STORY</button>
+                        <button
+                            className="swiper-btn"
+                            onClick={() => handleClick(2)}
+                        >
+                            READ STORY
+                        </button>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -69,7 +85,12 @@ export function StorySwiper() {
                         <h3 className="ibm-plex-sans-kr-medium">
                             금도끼 은도끼
                         </h3>
-                        <button className="swiper-btn">READ STORY</button>
+                        <button
+                            className="swiper-btn"
+                            onClick={() => handleClick(8)}
+                        >
+                            READ STORY
+                        </button>
                     </div>
                 </SwiperSlide>
             </Swiper>
