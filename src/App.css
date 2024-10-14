@@ -569,7 +569,7 @@ h3 {
 
 /* your page */
 .your-page {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.7);
     max-width: 840px;
     margin: auto;
     padding: 2rem;
@@ -580,6 +580,9 @@ h3 {
     display: flex;
     align-items: center;
     width: 100%;
+    padding: 0.5rem;
+}
+.textarea-field {
     padding: 0.5rem;
 }
 .input-field label,
@@ -595,6 +598,15 @@ h3 {
     color: white;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+}
+.textarea-field label {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    color: white;
+    height: 40px;
+    padding: 0.3rem 1rem;
+    margin-bottom: 1rem;
 }
 .your-page p {
     font-size: 24px;
@@ -612,6 +624,13 @@ h3 {
     font-size: 16px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+.textarea-field textarea {
+    width: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    border-radius: 10px;
 }
 .your-page .character {
     border: 2px solid rgba(0, 0, 0, 0.6);
