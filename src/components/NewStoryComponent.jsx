@@ -120,7 +120,7 @@ export const NewStoryComponent = () => {
                                 className="ibm-plex-sans-kr-medium"
                             >
                                 {showFullStory
-                                    ? "현재 스토리 보기"
+                                    ? "엔딩 다시 보기"
                                     : "전체 스토리 보기"}
                             </button>
                             <button
