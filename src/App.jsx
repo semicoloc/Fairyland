@@ -3,13 +3,14 @@ import "./App.css";
 import HomePage from "./pages/Home/HomePage";
 import NewPage from "./pages/New/NewPage";
 import OriginPage from "./pages/Origin/OriginPage";
-import { Footer, Header } from "./components";
+import { Footer, Header, ScrollToTop } from "./components";
 import OriginStoryPage from "./pages/OriginStory/OriginStoryPage";
 import NewStoryPage from "./pages/NewStory/NewStoryPage";
 
 function App() {
     return (
         <div>
+            <ScrollToTop />
             <Header />
             <div className="gif">
                 <main className="main-content">

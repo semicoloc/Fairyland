@@ -472,6 +472,18 @@ h3 {
     margin: auto;
     font-size: 24px;
 }
+.cardSwiper .other-story-btn {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: none;
+    margin-top: 1rem;
+    width: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+}
+.cardSwiper .other-story-btn:hover {
+    background-color: #9aa1b9;
+}
 
 .cardSwiper .swiper-pagination-bullet-active {
     background-color: #ff1493;
@@ -632,7 +644,7 @@ h3 {
         margin: 10px 0;
     }
     .cardSwiper .swiper-slide {
-        height: 600px;
+        height: 650px;
     }
     .cardSwiper .slide-box h5 {
         font-size: 20px;
@@ -673,7 +685,8 @@ h3 {
     }
     .new-story-component .new-story-create button,
     .new-story-component .story-end-buttons button,
-    .new-story-component .empty-story button {
+    .new-story-component .empty-story button,
+    .cardSwiper .other-story-btn {
         font-size: 14px;
     }
 }

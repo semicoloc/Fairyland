@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { OriginStoryData } from "../../assets/storyList";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,6 +12,7 @@ import TextToSpeech from "../../api/TextToSpeech";
 
 export default function OriginStoryPage() {
     const { id } = useParams();
+    const navigate = useNavigate();
     const story = Object.values(OriginStoryData).find(
         (book) => book.contentId === parseInt(id)
     );
@@ -19,6 +20,8 @@ export default function OriginStoryPage() {
     if (!story) {
         return <div>Story not found</div>;
     }
+
+    const storyPages = Object.entries(story.story);
 
     return (
         <div>
@@ -41,11 +44,13 @@ export default function OriginStoryPage() {
                         </h5>
                     </div>
                 </SwiperSlide>
-                {Object.entries(story.story).map(([key, text]) => (
+                {Object.entries(story.story).map(([key, text], index) => (
                     <SwiperSlide key={key}>
                         <StoryCard
                             imgUrl={story.img[`img${key.slice(4)}`]}
                             text={text}
+                            isLastPage={index === storyPages.length - 1}
+                            onNavigate={() => navigate("/origin")}
                         />
                     </SwiperSlide>
                 ))}
