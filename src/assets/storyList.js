@@ -311,23 +311,47 @@ export const NewStoryData = {
     },
     book13: {
         contentId: 13,
-        title: "여우와 두루미",
+        title: "여우와 두루미의 만찬",
         imageUrl: "/thumbnail/fox.webp",
-        initStory: "",
-        engTitle: "",
+        initStory:
+            "숲 속에 사는 여우와 물가에 사는 두루미는 서로 친구가 되기로 했습니다. 어느 날, 여우가 두루미를 집으로 초대하자 두루미는 기쁜 마음으로 여우네 집으로 갔습니다. 여우는 버섯 스프를 끓여 넓적한 접시에 담아 두루미 앞에 내놓았습니다. '두루미야, 내가 정성껏 끓인 수프야. 맛있게 먹어' 그러나 부리가 뾰족한 두루미는 수프를 먹을 수 없어 접시만 콕콕 찍었습니다.",
+        engTitle: "The Fox and the Stork's Dinner",
         conversationHistory: {
-            currentDecisionPoint: "",
-            nextStoryFlow: "",
-            nextStory: "",
+            currentDecisionPoint:
+                "The stork politely explains the difficulty. / The stork pretends to enjoy the soup.",
+            nextStoryFlow:
+                "If you selected 'The stork politely explains the difficulty.' : The fox feels embarrassed and tries to find a solution. If you selected 'The stork pretends to enjoy the soup.' : The fox is pleased, unaware of the stork's discomfort.",
+            nextStory: "The fox considers how to respond to the situation.",
         },
         selects: {
-            first: [],
-            second: [],
-            third: [],
+            first: [
+                "두루미가 예의 바르게 어려움을 설명합니다.",
+                "두루미가 수프를 즐기는 척합니다.",
+            ],
+            second: [
+                "여우가 두루미를 위해 긴 그릇을 가져옵니다.",
+                "여우가 두루미에게 다른 음식을 제안합니다.",
+            ],
+            third: [
+                "두루미가 여우를 자신의 집으로 초대합니다.",
+                "두루미가 여우와의 친구 관계를 재고합니다.",
+            ],
         },
-        decisionPoints: [],
-        storyFlows: [],
-        nextStories: [],
+        decisionPoints: [
+            "The stork politely explains the difficulty. / The stork pretends to enjoy the soup.",
+            "The fox brings a long container for the stork. / The fox suggests different food for the stork.",
+            "The stork invites the fox to their house. / The stork reconsiders their friendship with the fox.",
+        ],
+        storyFlows: [
+            "If you selected 'The stork politely explains the difficulty.' : The fox feels embarrassed and tries to find a solution. They have a conversation about their differences. If you selected 'The stork pretends to enjoy the soup.' : The fox is pleased, unaware of the stork's discomfort, leading to further misunderstandings.",
+            "If you selected 'The fox brings a long container for the stork.' : The fox shows consideration for the stork's needs, improving their friendship. If you selected 'The fox suggests different food for the stork.' : The fox tries to accommodate the stork, but it's clear they don't fully understand each other's needs.",
+            "If you selected 'The stork invites the fox to their house.' : The stork plans to teach the fox a lesson about consideration. If you selected 'The stork reconsiders their friendship with the fox.' : The stork wonders if they can truly be friends with someone so different from them.",
+        ],
+        nextStories: [
+            "The fox considers how to respond to the situation.",
+            "The fox and the stork reflect on their dinner experience.",
+            "",
+        ],
     },
     book14: {
         contentId: 14,
