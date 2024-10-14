@@ -98,4 +98,45 @@ const cumulativeInput = async (
     return generatedStory;
 };
 
-export { cumulativeInput, generateNextStory };
+const generateCustomStory = async (
+    genre,
+    scene,
+    name,
+    gender,
+    age,
+    trait,
+    flow,
+    length
+) => {
+    const messages = [
+        {
+            role: "system",
+            content: `
+                You are an assistant who creates a story with the settings the user wants.
+                Given [genre], [Scene], [Main Character's name], [Main Character's gender], [Main Character's age], [Main Character's trait], [Story Flow], and [Story Length], create a story of [Story Length] length using all of the information except [Story Length].
+                You can also create other characters besides the main character.
+                Include dialog between characters.
+                Answer the created story in Korean only.
+                Wrap lines whenever the flow of the story changes.
+            `,
+        },
+        {
+            role: "user",
+            content: `
+                [Genre] : ${genre}
+                [Scene] : ${scene}
+                [Main Character's name] : ${name}
+                [Main Character's gender] : ${gender}
+                [Main Character's age] : ${age}
+                [Main Character's trait] : ${trait}
+                [Story Flow] : ${flow}
+                [Story Length] : ${length}
+            `,
+        },
+    ];
+
+    const response = await getCompletionFromMessages(messages, "gpt-4o", 0.7);
+    return response;
+};
+
+export { cumulativeInput, generateNextStory, generateCustomStory };
