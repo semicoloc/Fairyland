@@ -451,9 +451,9 @@ h3 {
 }
 .cardSwiper .slide-box {
     margin: auto;
+    padding: 0 2rem;
 }
 .cardSwiper .slide-box .img-box {
-    width: calc(100% - 4rem);
     margin: 2rem auto;
 }
 .cardSwiper .slide-box img {
@@ -463,13 +463,11 @@ h3 {
     object-position: center;
 }
 .cardSwiper .slide-box h5 {
-    width: calc(100% - 4rem);
     text-align: center;
     margin: auto;
     font-size: 32px;
 }
 .cardSwiper .slide-box p {
-    width: calc(100% - 4rem);
     text-align: center;
     margin: auto;
     font-size: 24px;
@@ -495,7 +493,6 @@ h3 {
 
 /* api */
 .text-to-speech {
-    width: calc(100% - 4rem);
     margin: auto;
 }
 
@@ -640,9 +637,10 @@ h3 {
     .cardSwiper .slide-box h5 {
         font-size: 20px;
     }
-    .cardSwiper .slide-box .img-box,
-    .new-story-component .img-box {
-        width: calc(100% - 2rem);
+    .cardSwiper .slide-box {
+        padding: 0 1rem;
+    }
+    .cardSwiper .slide-box .img-box {
         margin: 1rem auto;
     }
     .cardSwiper .slide-box img,
