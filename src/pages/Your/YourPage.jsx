@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { InputField, SelectField } from "./components";
+import { InputField, SelectField, TextAreaField } from "./components";
 import { generateCustomStory } from "../../api/StoryGenerator";
 import { Loading } from "../../components/Loading";
 
@@ -112,7 +112,7 @@ export default function YourPage() {
                 />
             </div>
 
-            <InputField
+            <TextAreaField
                 label="스토리 방향"
                 name="flow"
                 value={storyParams.flow}
