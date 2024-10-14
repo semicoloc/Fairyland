@@ -56,6 +56,7 @@
 /* outlet */
 .main-content {
     flex: 1;
+    min-height: calc(100vh - 300px);
     padding-top: 160px;
     margin: auto;
 }
@@ -252,6 +253,27 @@ h4 {
 }
 .go-story-btn:hover {
     background-color: #9aa1b9;
+}
+
+/* loading */
+.loading-indicator {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.loading-indicator p {
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 /* -------page------- */
@@ -451,7 +473,7 @@ h3 {
     width: calc(100% - 4rem);
     text-align: center;
     margin: auto;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .cardSwiper .swiper-pagination-bullet-active {
@@ -489,6 +511,70 @@ h3 {
 
 .text-to-speech i {
     font-size: 36px;
+}
+
+/* new story component */
+.new-story-detail-page {
+    max-width: 1440px;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.new-story-detail-page > * {
+    color: white;
+}
+.new-story-component .img-box {
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+.new-story-component .img-box img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+.new-story-component .new-story-box {
+    margin-bottom: 1rem;
+    font-size: 24px;
+    font-weight: 300;
+}
+.new-story-component .new-story-choice p,
+.new-story-component .empty-story p {
+    font-size: 24px;
+    font-weight: 500;
+}
+.new-story-component .empty-story p {
+    margin-bottom: 1rem;
+}
+.new-story-component .text-to-speech {
+    width: 100%;
+}
+.new-story-component .text-to-speech i {
+    color: white;
+}
+.new-story-component .text-to-speech i:hover {
+    color: #ff1493;
+}
+.new-story-component .new-story-create,
+.new-story-component .story-end-buttons {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.new-story-component .new-story-create button,
+.new-story-component .story-end-buttons button,
+.new-story-component .empty-story button {
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.6);
+}
+.new-story-component .new-story-create button:hover,
+.new-story-component .story-end-buttons button:hover,
+.new-story-component .empty-story button:hover {
+    background-color: #9aa1b9;
 }
 
 /* 반응형 */
@@ -555,17 +641,21 @@ h3 {
     .cardSwiper .slide-box h5 {
         font-size: 20px;
     }
-    .cardSwiper .slide-box .img-box {
+    .cardSwiper .slide-box .img-box,
+    .new-story-component .img-box {
         width: calc(100% - 2rem);
         margin: 1rem auto;
     }
-    .cardSwiper .slide-box img {
+    .cardSwiper .slide-box img,
+    .new-story-component .img-box img {
         height: 300px;
     }
-    .cardSwiper .slide-box p {
-        font-size: 16px;
-    }
-    .text-to-speech i {
+    .cardSwiper .slide-box p,
+    .text-to-speech i,
+    .new-story-component .new-story-box,
+    .new-story-component .new-story-choice p,
+    .new-story-component .text-to-speech i,
+    .new-story-component .empty-story p {
         font-size: 16px;
     }
     .home01 {
@@ -576,5 +666,17 @@ h3 {
     }
     .thumbnail img {
         height: auto;
+    }
+    .new-story-detail-page {
+        padding: 1rem;
+    }
+    .new-story-component .img-box img,
+    .new-story-component .img-box {
+        height: 300px;
+    }
+    .new-story-component .new-story-create button,
+    .new-story-component .story-end-buttons button,
+    .new-story-component .empty-story button {
+        font-size: 14px;
     }
 }

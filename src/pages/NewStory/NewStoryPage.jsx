@@ -1,7 +1,9 @@
+import { NewStoryComponent } from "../../components/NewStoryComponent";
+
 export default function NewStoryPage() {
     return (
-        <div>
-            <p>new</p>
+        <div className="new-story-detail-page">
+            <NewStoryComponent />
         </div>
     );
 }

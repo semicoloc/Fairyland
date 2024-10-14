@@ -2,7 +2,6 @@ import { useState, useRef } from "react";
 
 const TextToSpeech = ({ text }) => {
     const [isLoading, setIsLoading] = useState(false);
-    const [isHovered, setIsHovered] = useState(false);
     const audioRef = useRef(null);
     const apiKey = import.meta.env.VITE_OPENAI_API_KEY;
 
@@ -52,8 +51,6 @@ const TextToSpeech = ({ text }) => {
                 onClick={handlePlay}
                 disabled={isLoading}
                 className="audio_btn"
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
             >
                 {isLoading ? (
                     <i className="fa-solid fa-spinner"></i>
