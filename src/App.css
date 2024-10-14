@@ -344,7 +344,6 @@ h4 {
 .thumbnail {
     width: 100%;
     height: 66%;
-    border: 1px solid pink;
     overflow: hidden;
     transition: transform 0.3s ease; /* 부드러운 전환 효과 추가 */
 }
