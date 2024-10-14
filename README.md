@@ -1,8 +1,18 @@
-# React + Vite
+# FairyLand
+동화 사이트 : 오리지널 동화 + 기존 동화에서 새로운 스토리 생성 + 새로운 동화
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 개발 환경
+- vite
+- react
+- javascript
+- vercel
+- gpt4o
+- tts
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 수정 및 추가 기능
+- 페이지 바꼈을 때 스크롤 맨 위로
+- 오리지널 스토리 마지막 페이지에 버튼 추가
+- 새로운 스토리 생성 기능 추가
+- 이미지 생성 기능 추가 or 이미지 생성해서 넣기
+- home 페이지에 요소 추가
+- 오리지널 스토리 추가
