@@ -8,7 +8,7 @@
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: top center;
-    background-color: rgb(60, 116, 183);
+    background-color: #ddabb0;
     width: 100%;
     min-height: 100vh;
     height: auto;
@@ -276,6 +276,70 @@ h4 {
     font-weight: bold;
 }
 
+/* new story component */
+.new-story-detail-page {
+    max-width: 1440px;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.new-story-detail-page > * {
+    color: white;
+}
+.new-story-component .img-box {
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+.new-story-component .img-box img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+.new-story-component .new-story-box {
+    margin-bottom: 1rem;
+    font-size: 24px;
+    font-weight: 300;
+}
+.new-story-component .new-story-choice p,
+.new-story-component .empty-story p {
+    font-size: 24px;
+    font-weight: 500;
+}
+.new-story-component .empty-story p {
+    margin-bottom: 1rem;
+}
+.new-story-component .text-to-speech {
+    width: 100%;
+}
+.new-story-component .text-to-speech i {
+    color: white;
+}
+.new-story-component .text-to-speech i:hover {
+    color: #ff1493;
+}
+.new-story-component .new-story-create,
+.new-story-component .story-end-buttons {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.new-story-component .new-story-create button,
+.new-story-component .story-end-buttons button,
+.new-story-component .empty-story button {
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.6);
+}
+.new-story-component .new-story-create button:hover,
+.new-story-component .story-end-buttons button:hover,
+.new-story-component .empty-story button:hover {
+    background-color: #9aa1b9;
+}
+
 /* -------page------- */
 /* home */
 .home01 {
@@ -439,7 +503,7 @@ h3 {
     object-position: center;
 }
 
-/* -- origin story page -- */
+/*  origin story page  */
 
 .cardSwiper .swiper-slide {
     height: 800px;
@@ -503,6 +567,84 @@ h3 {
     }
 }
 
+/* your page */
+.your-page {
+    background-color: rgba(255, 255, 255, 0.6);
+    max-width: 840px;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 20px;
+}
+.input-field,
+.select-field {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+}
+.input-field label,
+.select-field label {
+    font-size: 20px;
+    flex-shrink: 0;
+    border: none;
+    height: 40px;
+    display: flex;
+    padding: 0 1rem;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.your-page p {
+    font-size: 24px;
+    text-align: center;
+}
+.input-field input,
+.select-field select {
+    padding: 0.5rem 0.5rem;
+    box-sizing: border-box;
+    flex-grow: 1;
+    height: 40px;
+    width: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.your-page .character {
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 20px;
+}
+.your-page button {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 1rem 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.6);
+}
+.your-page button:hover {
+    background-color: #9aa1b9;
+}
+.generated-story {
+    margin-top: 1rem;
+    padding: 1rem;
+}
+.generated-story .title {
+    font-weight: bold;
+    font-size: 24px;
+}
+.generated-story .story {
+    margin-top: 1rem;
+    font-size: 20px;
+}
+
 /* api */
 .text-to-speech {
     margin: auto;
@@ -519,70 +661,6 @@ h3 {
 
 .text-to-speech i {
     font-size: 36px;
-}
-
-/* new story component */
-.new-story-detail-page {
-    max-width: 1440px;
-    margin: auto;
-    padding: 2rem;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-.new-story-detail-page > * {
-    color: white;
-}
-.new-story-component .img-box {
-    overflow: hidden;
-    margin-bottom: 1rem;
-}
-.new-story-component .img-box img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    object-position: center;
-}
-.new-story-component .new-story-box {
-    margin-bottom: 1rem;
-    font-size: 24px;
-    font-weight: 300;
-}
-.new-story-component .new-story-choice p,
-.new-story-component .empty-story p {
-    font-size: 24px;
-    font-weight: 500;
-}
-.new-story-component .empty-story p {
-    margin-bottom: 1rem;
-}
-.new-story-component .text-to-speech {
-    width: 100%;
-}
-.new-story-component .text-to-speech i {
-    color: white;
-}
-.new-story-component .text-to-speech i:hover {
-    color: #ff1493;
-}
-.new-story-component .new-story-create,
-.new-story-component .story-end-buttons {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.new-story-component .new-story-create button,
-.new-story-component .story-end-buttons button,
-.new-story-component .empty-story button {
-    padding: 0.5rem 1rem;
-    font-size: 20px;
-    border: none;
-    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.6);
-}
-.new-story-component .new-story-create button:hover,
-.new-story-component .story-end-buttons button:hover,
-.new-story-component .empty-story button:hover {
-    background-color: #9aa1b9;
 }
 
 /* 반응형 */
@@ -687,6 +765,23 @@ h3 {
     .new-story-component .story-end-buttons button,
     .new-story-component .empty-story button,
     .cardSwiper .other-story-btn {
+        font-size: 14px;
+    }
+    .input-field label,
+    .select-field label {
+        font-size: 16px;
+    }
+    .your-page p {
+        font-size: 20px;
+    }
+    .input-field input,
+    .select-field select {
+        font-size: 14px;
+    }
+    .generated-story .title {
+        font-size: 16px;
+    }
+    .generated-story .story {
         font-size: 14px;
     }
 }

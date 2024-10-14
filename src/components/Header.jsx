@@ -53,6 +53,11 @@ export function Header() {
                                 NEW STORY
                             </Link>
                         </li>
+                        <li className={isActive("/your")}>
+                            <Link to="/your" onClick={closeMenu}>
+                                YOUR STORY
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
             </div>
