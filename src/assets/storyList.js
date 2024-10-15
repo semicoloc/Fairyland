@@ -486,7 +486,7 @@ export const OriginStoryData = {
             text10: `빨간 모자와 할머니, 사냥꾼 아저씨는 기뻐하며 빵과 포도주를 먹고 마셨대요.`,
         },
         img: {
-            img01: "/thumbnail/redhat.webp",
+            img01: "/story/redhat/01.webp",
             img02: "/thumbnail/redhat.webp",
             img03: "/thumbnail/redhat.webp",
             img04: "/thumbnail/redhat.webp",
